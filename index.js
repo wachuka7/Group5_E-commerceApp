@@ -15,10 +15,11 @@ function displayData(products){
         displayedData.innerHTML=`
         <img src=${product.image} alt=${product.image}/>
         <h3>${product.title}</h3>
-        <p><span>${product.price}</span></p>
+        <p><span>price:${product.price}</span></p>
         `;
         document.querySelector('.data-container').appendChild(displayedData);
         const viewButton=document.createElement('button')
+        viewButton.id='view-button'
         viewButton.textContent='View'
         displayedData.appendChild(viewButton)
         viewButton.addEventListener('click', (product)=> {
