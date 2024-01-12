@@ -8,6 +8,11 @@ function fetchProducts(){
             displayData(products);  
 })
 }
+// const title=document.createElement('h1')
+// title.textContent='Store'
+// document.body.appendChild(title)
+
+
 function displayData(products){
     products.forEach(product=>{
         const displayedData=document.createElement('div');
@@ -22,14 +27,14 @@ function displayData(products){
         viewButton.id='view-button'
         viewButton.textContent='View'
         displayedData.appendChild(viewButton)
-        viewButton.addEventListener('click', (product)=> {
-            console.log('clicked')
+        viewButton.addEventListener('click', ()=> {
         displayAllDetails(product)
     })
     });
 }
 function displayAllDetails(product){
     const productDetails=document.createElement('div');
+   
     productDetails.id='product-details'
     productDetails.innerHTML=`
     <img src=${product.image} alt=${product.image}/>
