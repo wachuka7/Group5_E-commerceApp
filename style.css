@@ -61,14 +61,15 @@ body {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        height: 70%;
+        height: auto;
         width: 40%;
         border: 1px solid blue;
-        
+        overflow: hidden;
+        object-fit: contain;
     }
     .details-container img {
         height: 60vh;
-        width: 70vw;
-        object-fit: cover;
+        width: 100%;
+        
     }    
     
